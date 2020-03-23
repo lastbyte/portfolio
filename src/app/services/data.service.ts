@@ -21,7 +21,7 @@ export class DataService {
   }
 
   public getJSON(): Observable<any> {
-    return this.httpClient.get('../assets/data.json');
+    return this.httpClient.get('https://raw.githubusercontent.com/knp069/portfolio/master/src/assets/data.json');
   }
 
   private getBanner = () => this.data.home;
