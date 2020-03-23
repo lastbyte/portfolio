@@ -21,6 +21,8 @@ export class HomeComponent implements OnInit, AfterViewInit{
 
   outputContainer: Output;
 
+  show = true;
+
   constructor(private dataService: DataService, private sanitizer: DomSanitizer) {
     this.activeElement = document.activeElement;
     this.outputContainer = new Output();
@@ -43,6 +45,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
         this.outputContainer = this.getCommandOutput(value);
         this.clearCommandValue();
         this.shiftFocusToInputBox(this.activeElement);
+        this.show = value === 'banner';
       });
     }
   }
@@ -73,10 +76,6 @@ export class HomeComponent implements OnInit, AfterViewInit{
 
   private clearCommandValue() {
     this.commandElement.nativeElement.value = '';
-  }
-
-  async delay(ms: number) {
-    await new Promise(resolve => setTimeout(() => resolve(), ms)).then(() => console.log('fired'));
   }
 
   private runCommandAndDisplayOutput() {

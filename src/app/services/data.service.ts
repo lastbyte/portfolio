@@ -24,7 +24,7 @@ export class DataService {
     return this.httpClient.get('https://raw.githubusercontent.com/knp069/portfolio/master/src/assets/data.json');
   }
 
-  private getBanner = () => this.data.home;
+  private getAboutMe = () => this.data.home;
 
   private getExperienceData = () => this.data.experience;
 
@@ -42,8 +42,8 @@ export class DataService {
 
   getCommandOutput(command: string) {
     switch (command) {
-      case Constants.HOME :
-        return this.getBanner();
+      case Constants.ABOUT_ME :
+        return this.getAboutMe();
       case Constants.EXPERIENCE :
         return this.getExperienceData();
       case Constants.EDUCATION :
@@ -54,6 +54,8 @@ export class DataService {
         return this.getProjectsData();
       case Constants.TIME :
         return new Date();
+      case Constants.BANNER :
+        return '';
       default :
         return command;
     }

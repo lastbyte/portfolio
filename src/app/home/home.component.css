@@ -6,6 +6,17 @@
   color: greenyellow;
 }
 
+pre{
+  background: black;
+  color: greenyellow;
+  border: 0;
+}
+
+.help{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 #outputContainer .output a, #outputContainer .output span {
   color: greenyellow;
@@ -16,9 +27,9 @@
 }
 
 .skills-wrapper{
+  align-items: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 textarea{

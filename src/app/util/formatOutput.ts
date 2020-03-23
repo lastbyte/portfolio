@@ -9,7 +9,7 @@ export class FormatOutput {
 
   public static formatOutput(command: string, output: any) {
     switch (command) {
-      case Constants.HOME :
+      case Constants.ABOUT_ME :
         return this.formatHomeOutput(output);
       case Constants.EDUCATION :
         return this.formatEducationOutput(output);
@@ -25,6 +25,8 @@ export class FormatOutput {
         return this.formatHelpOutput();
       case Constants.TIME :
         return this.formatTimeOutput(output);
+      case Constants.BANNER :
+        return '';
       default :
         return command;
 

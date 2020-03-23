@@ -9,9 +9,16 @@
   <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
     <ul class="navbar-nav">
       <li (click)="isMenuCollapsed=!isMenuCollapsed">
-        <a (click)="updateTerminalMessage('home')">
+        <a (click)="updateTerminalMessage('banner')">
           <fa-icon [icon]="homeIcon" aria-hidden="true"></fa-icon>
           HOME
+        </a>
+      </li>
+
+      <li (click)="isMenuCollapsed=!isMenuCollapsed">
+        <a (click)="updateTerminalMessage('info')">
+          <fa-icon [icon]="homeIcon" aria-hidden="true"></fa-icon>
+          ABOUT ME
         </a>
       </li>
 
