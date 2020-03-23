@@ -102,48 +102,48 @@
   ],
   "skills" : {
     "programming" : {
-      "lannameguages" : [
+      "languages" : [
         {
           "name": "c/c++",
           "level": "intermediate"
         },
         {
           "name": "java",
-          "level" : "advance"
+          "level" : 10
         },
         {
           "name": "python",
-          "level" : "intermediate"
+          "level" : 8
         },
         {
           "name": "go",
-          "level" : "beginner"
+          "level" : 7
         },
         {
           "name": "typescript",
-          "level" : "intermediate"
+          "level" : 7
         }
       ],
       "frameworks" : [
         {
           "name" : "spring-boot",
-          "level" : "advance"
+          "level" : 10
         },
         {
           "name" : "dropWizard",
-          "level" : "intermediate"
+          "level" : 9
         },
         {
           "name" : "angular",
-          "level" : "intermediate"
+          "level" : 8
         },
         {
           "name" : "mockito",
-          "level" : "advance"
+          "level" : 10
         },
         {
           "name" : "django",
-          "level" : "intermediate"
+          "level" : 7
         }
       ]
     }
