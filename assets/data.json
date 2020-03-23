@@ -1,0 +1,156 @@
+{
+  "home" : {
+    "banner":"Nishant Kumar",
+    "about" : {
+      "name" : "Nishant Kumar",
+      "description": "A results-driven, articulate and flexible Software Engineer who can think “out of the box”. I Love to\nsolve puzzles and I am very much Interested and fascinated by AI and Machine Learning. Interested in\na challenging technical track career in an application development environment.",
+      "email" : "knp069@gmail.com",
+      "phone" : "+91 94233 49297",
+      "github" : "https://github.com/knp069",
+      "linkedin" : "https://www.linkedin.com/in/nishant-kumar-74806377/",
+      "facebook" : "https://www.facebook.com/knp069",
+      "location" : {
+        "address" : "The Greens Apartment",
+        "city" : "Bengaluru",
+        "state" : "Karnataka"
+      },
+      "interests" : ["sketching", "cooking", "trekking", "Travelling"],
+      "languages" : [
+        {
+          "name" : "English",
+          "proficiency" : "Business proficiency"
+        },
+        {
+          "name" : "Hindi",
+          "proficiency" : "Mother tongue"
+        }
+      ]
+    }
+  },
+  "experience" : [
+    {
+      "company": "JP Morgan Chase & Co.",
+      "start": "16-may-2016",
+      "end": "15-july-2016",
+      "role" : "Intern (Technology Analyst)",
+      "description" : {
+
+      }
+    },
+    {
+      "company": "JP Morgan Chase & Co.",
+      "start": "31-july-2017",
+      "end": "31-August-2018",
+      "role" : "Technology Analyst",
+      "description" : {
+
+      }
+    },
+    {
+      "company": "Halodoc",
+      "start": "3-sept-2018",
+      "end": "31-july-2019",
+      "role" : "Software Development Engineer 1",
+      "description" : {
+
+      }
+    },
+    {
+      "company": "OYO",
+      "start": "16-sept-2019",
+      "end": "present",
+      "role" : "Software Development Engineer 1",
+      "description" : {
+
+      }
+    }
+  ],
+  "education" : [
+    {
+      "institute" : "Visvesvaraya National Institute of Technology",
+      "degree" : "B.tech",
+      "major" : "Computer Science & Engineering",
+      "minor" : "",
+      "start" : "August 2013",
+      "end" : "April 2017",
+      "score" : "7.69 CGPA"
+    },
+    {
+      "institute" : "Shri Guru Govind Singh College",
+      "degree" : "Higher secondary",
+      "major" : "PCM",
+      "minor" : "",
+      "start" : "April 2011",
+      "end" : "March 2013",
+      "score" : "78.60 %"
+    },
+    {
+      "institute" : "Ishan International public school",
+      "degree" : "secondary",
+      "major" : "",
+      "minor" : "",
+      "start" : "April 2010",
+      "end" : "March 2011",
+      "score" : "10 CGPA"
+    }
+  ],
+  "skills" : {
+    "programming" : {
+      "lannameguages" : [
+        {
+          "name": "c/c++",
+          "level": "intermediate"
+        },
+        {
+          "name": "java",
+          "level" : "advance"
+        },
+        {
+          "name": "python",
+          "level" : "intermediate"
+        },
+        {
+          "name": "go",
+          "level" : "beginner"
+        },
+        {
+          "name": "typescript",
+          "level" : "intermediate"
+        }
+      ],
+      "frameworks" : [
+        {
+          "name" : "spring-boot",
+          "level" : "advance"
+        },
+        {
+          "name" : "dropWizard",
+          "level" : "intermediate"
+        },
+        {
+          "name" : "angular",
+          "level" : "intermediate"
+        },
+        {
+          "name" : "mockito",
+          "level" : "advance"
+        },
+        {
+          "name" : "django",
+          "level" : "intermediate"
+        }
+      ]
+    }
+  },
+  "projects" : [
+    {
+      "name" : "",
+      "url" : "",
+      "description" : "",
+      "contributors" : []
+    }
+  ],
+  "contact": {
+
+  }
+}
