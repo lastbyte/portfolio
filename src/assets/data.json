@@ -42,27 +42,34 @@
       "start": "31-july-2017",
       "end": "31-August-2018",
       "role" : "Technology Analyst",
-      "description" : {
-
-      }
+      "description" : [
+        "Worked in an agile environment and participated in conceptualizing and implementing platform features for our global web project, Have a good amount of experience in TDD.",
+        "Designed and developed micro-service based application which adheres to cloud development principle.",
+        "Collaborated with front-end development team on user-facing features and services.",
+        "Migrating of Java 7 applications to java 8"
+      ]
     },
     {
       "company": "Halodoc",
       "start": "3-sept-2018",
       "end": "31-july-2019",
       "role" : "Software Development Engineer 1",
-      "description" : {
+      "description" : [
+       "Worked on developing scalable and high performing micro services.",
+        "slug generation - generating meaningful url "
 
-      }
+      ]
     },
     {
       "company": "OYO",
       "start": "16-sept-2019",
       "end": "present",
       "role" : "Software Development Engineer 1",
-      "description" : {
-
-      }
+      "description" : [
+        "Worked in an agile environment and participated in conceptualizing and implementing platform features for our global web project, Have a good amount of experience in TDD.",
+        "Designed and developed micro-service based application which adheres to cloud development principle.",
+        "Collaborated with front-end development team on user-facing features and services."
+      ]
     }
   ],
   "education" : [
