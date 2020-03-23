@@ -3,18 +3,30 @@
 
 body{
   background: #000000;
-  color: #ffffff;
+  color: yellowgreen;
   font-family: 'Source Code Pro', sans-serif;
   padding-top: 5rem;
 }
 
-#terminal::-webkit-scrollbar, body::-webkit-scrollbar  {
-  width: 0 !important
+body::-webkit-scrollbar {
+  background-color:#fff;
+  width:8px
 }
-#terminal, body {
-  overflow: -moz-scrollbars-none;
-  -ms-overflow-style: none;
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: black;
 }
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: yellowgreen;
+  border-radius:16px;
+  border:2px solid #fff
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {display:none}
 
 #terminal{
   border: white;

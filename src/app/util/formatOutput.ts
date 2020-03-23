@@ -93,8 +93,12 @@ export class FormatOutput {
         response = response.concat('<div class="prompt">  Role : <span> ' + experience.role + '</span></div>');
       }
       response = response.concat('<div class="prompt">  Duration : <span> ' + experience.start + ' - ' + experience.end + '</span></div>');
-      if (experience.description !== '') {
-        response = response.concat('<div class="prompt">  Description : <span> ' + experience.description + '</span></div>');
+      if (experience.description.length > 0 ) {
+        response = response.concat('<div class="prompt">  Description : <ul>');
+        experience.description.forEach( exp => {
+          response = response.concat('<li> ' + exp + '</li>');
+        });
+        response = response.concat('</ul></div>');
       }
       response = response.concat('<div class="prompt"><hr></div>');
     });
@@ -103,7 +107,37 @@ export class FormatOutput {
   }
 
   private static formatSkillsOutput(output: Skills) {
-    return 'output';
+    let response = '';
+    response = response.concat('<div class="skills-wrapper">');
+    if (output.programming.languages.length > 0) {
+      response = response.concat('<div>');
+      response = response.concat('<div class="heading"><samp>Languages</samp></div>');
+      response = response.concat('<table class="table"><tbody>');
+      output.programming.languages.forEach( language => {
+        response = response.concat('<tr>');
+        response = response.concat('<td>' + language.name + '</td>');
+        response = response.concat('<td>' + '* '.repeat(language.level) + '</td>');
+        response = response.concat('</tr>');
+      });
+      response = response.concat('</tbody></table>');
+      response = response.concat('</div>');
+    }
+    if (output.programming.frameworks.length > 0) {
+      response = response.concat('<div>');
+      response = response.concat('<div class="heading"><samp>Frameworks</samp></div>');
+      response = response.concat('<table class="table"><tbody>');
+      output.programming.frameworks.forEach( framework => {
+        response = response.concat('<tr>');
+        response = response.concat('<td>' + framework.name + '</td>');
+        response = response.concat('<td>' + '* '.repeat(framework.level) + '</td>');
+        response = response.concat('</tr>');
+      });
+      response = response.concat('</tbody></table>');
+      response = response.concat('</div>');
+    }
+    response = response.concat('</div>');
+    console.log(response);
+    return response;
   }
 
   private static formatProjectsOutput(output: Projects[]) {

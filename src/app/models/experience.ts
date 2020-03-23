@@ -3,5 +3,5 @@ export class Experience {
   start: string;
   end: string;
   role: string;
-  description: any;
+  description: string[];
 }

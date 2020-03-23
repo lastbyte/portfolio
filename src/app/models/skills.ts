@@ -1,11 +1,11 @@
 class Language {
   name: string;
-  level: string;
+  level: number;
 }
 
 class Framework {
   name: string;
-  level: string;
+  level: number;
 }
 
 class Programming {
