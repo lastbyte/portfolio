@@ -33,36 +33,42 @@
       "start": "16-may-2016",
       "end": "15-july-2016",
       "role" : "Intern (Technology Analyst)",
-      "description" : {
+      "description" : [
 
-      }
+      ]
     },
     {
       "company": "JP Morgan Chase & Co.",
       "start": "31-july-2017",
       "end": "31-August-2018",
       "role" : "Technology Analyst",
-      "description" : {
-
-      }
+      "description" : [
+        "Worked in an agile environment and participated in conceptualizing and implementing platform features for our global web project, Have a good amount of experience in TDD.",
+        "Designed and developed micro-service based application which adheres to cloud development principle.",
+        "Collaborated with front-end development team on user-facing features and services.",
+        "Migrating of Java 7 applications to java 8"
+      ]
     },
     {
       "company": "Halodoc",
       "start": "3-sept-2018",
       "end": "31-july-2019",
       "role" : "Software Development Engineer 1",
-      "description" : {
-
-      }
+      "description" : [
+        "Worked on developing scalable and high performing micro services.",
+        "slug generation - generating meaningful url "
+      ]
     },
     {
       "company": "OYO",
       "start": "16-sept-2019",
       "end": "present",
       "role" : "Software Development Engineer 1",
-      "description" : {
-
-      }
+      "description" : [
+        "Worked in an agile environment and participated in conceptualizing and implementing platform features for our global web project, Have a good amount of experience in TDD.",
+        "Designed and developed micro-service based application which adheres to cloud development principle.",
+        "Collaborated with front-end development team on user-facing features and services."
+      ]
     }
   ],
   "education" : [
@@ -96,58 +102,61 @@
   ],
   "skills" : {
     "programming" : {
-      "lannameguages" : [
+      "languages" : [
         {
           "name": "c/c++",
-          "level": "intermediate"
+          "level": 8
         },
         {
           "name": "java",
-          "level" : "advance"
+          "level" : 10
         },
         {
           "name": "python",
-          "level" : "intermediate"
+          "level" : 8
         },
         {
           "name": "go",
-          "level" : "beginner"
+          "level" : 7
         },
         {
           "name": "typescript",
-          "level" : "intermediate"
+          "level" : 7
         }
       ],
       "frameworks" : [
         {
           "name" : "spring-boot",
-          "level" : "advance"
+          "level" : 10
         },
         {
           "name" : "dropWizard",
-          "level" : "intermediate"
+          "level" : 9
         },
         {
           "name" : "angular",
-          "level" : "intermediate"
+          "level" : 8
         },
         {
           "name" : "mockito",
-          "level" : "advance"
+          "level" : 10
         },
         {
           "name" : "django",
-          "level" : "intermediate"
+          "level" : 7
         }
       ]
     }
   },
   "projects" : [
     {
-      "name" : "",
-      "url" : "",
-      "description" : "",
-      "contributors" : []
+      "name" : "portfolio",
+      "url" : "https://github.com/knp069/portfolio",
+      "description" : " A single page website , which looks like linux terminal, but is an portfolio, works like terminal, you can browse the website using the navigation bar or via commands",
+      "tags" : [
+        "angular", "json", "css", "html", "bootstrap"
+      ],
+      "contributors" : ["Nishant Kumar"]
     }
   ],
   "contact": {
