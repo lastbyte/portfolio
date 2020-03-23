@@ -3,6 +3,12 @@
   margin: 10px;
   font-size: x-large;
   display: none;
+  z-index: 2000;
+}
+
+.navbar{
+  z-index: 1000;
+  background: black;
 }
 
 .show{

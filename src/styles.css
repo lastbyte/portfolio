@@ -5,9 +5,7 @@ body{
   background: #000000;
   color: #ffffff;
   font-family: 'Source Code Pro', sans-serif;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  padding-top: 5rem;
 }
 
 #terminal::-webkit-scrollbar, body::-webkit-scrollbar  {
