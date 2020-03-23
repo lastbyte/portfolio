@@ -150,10 +150,13 @@
   },
   "projects" : [
     {
-      "name" : "",
-      "url" : "",
-      "description" : "",
-      "contributors" : []
+      "name" : "portfolio",
+      "url" : "https://github.com/knp069/portfolio",
+      "description" : " A single page website , which looks like linux terminal, but is an portfolio, works like terminal, you can browse the website using the navigation bar or via commands",
+      "tags" : [
+        "angular", "json", "css", "html", "bootstrap"
+      ],
+      "contributors" : ["Nishant Kumar"]
     }
   ],
   "contact": {
