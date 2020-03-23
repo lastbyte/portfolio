@@ -1,0 +1,75 @@
+*{
+  background: transparent;
+}
+
+.prompt{
+  color: greenyellow;
+}
+
+
+#outputContainer .output a, #outputContainer .output span {
+  color: white;
+}
+
+textarea{
+  height: auto;
+}
+
+hr{
+  width: 10rem;
+}
+
+
+.row{
+  margin: 0;
+}
+
+app-home{
+  width: 100%;
+}
+
+#commandWrapper{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+
+#commandWrapper > label {
+  float: left;
+}
+
+#commandWrapper > div {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  overflow: hidden;
+}
+
+#command {
+  border: none;
+  width: 100%;
+}
+#command:focus{
+  outline: none;
+}
+
+#outputContainer > .input{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#outputContainer > .input > .command {
+  width: 100%;
+}
+
+app-home{
+  position: relative;
+}
+
+@media screen and (max-width: 720px){
+  *{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+
+  <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
+  <button class="navbar-toggler" type="button" (click)="toggleCollpsed()">
+    &#9776;
+  </button>
+
+  <!-- Step 2: Add the ngbCollapse directive to the element below. -->
+  <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li (click)="isMenuCollapsed=!isMenuCollapsed">
+        <a (click)="updateTerminalMessage('home')">
+          <fa-icon [icon]="homeIcon" aria-hidden="true"></fa-icon>
+          HOME
+        </a>
+      </li>
+
+      <li (click)="isMenuCollapsed=!isMenuCollapsed">
+        <a (click)="updateTerminalMessage('experience');">
+          <fa-icon [icon]="experienceIcon" aria-hidden="true"></fa-icon>
+          EXPERIENCE
+        </a>
+      </li>
+
+      <li (click)="isMenuCollapsed=!isMenuCollapsed">
+        <a (click)="updateTerminalMessage('education')">
+          <fa-icon [icon]="educationIcon" aria-hidden="true"></fa-icon>
+          EDUCATION
+        </a>
+      </li>
+
+      <li (click)="isMenuCollapsed=!isMenuCollapsed">
+        <a (click)="updateTerminalMessage('projects')">
+          <fa-icon [icon]="projectsIcon" aria-hidden="true"></fa-icon>
+          PROJECTS
+        </a>
+      </li>
+
+      <li (click)="isMenuCollapsed=!isMenuCollapsed">
+        <a (click)="updateTerminalMessage('skills')">
+          <fa-icon [icon]="skillsIcon" aria-hidden="true"></fa-icon>
+          SKILLS
+        </a>
+      </li>
+
+      <li (click)="isMenuCollapsed=!isMenuCollapsed">
+        <a (click)="updateTerminalMessage('contact-me')">
+          <fa-icon [icon]="contactsIcon" aria-hidden="true"></fa-icon>
+          CONTACT ME
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

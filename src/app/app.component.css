@@ -1,0 +1,17 @@
+#terminal{
+  margin: auto;
+  display: flex;
+  border: 1px white solid;
+  border-radius: 5px;
+  padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 80vh;
+}
+
+@media screen and (max-width: 720px) {
+  #terminal{
+    border: none;
+    overflow-y: auto;
+  }
+}

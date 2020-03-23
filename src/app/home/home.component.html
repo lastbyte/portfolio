@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row" id="outputContainer">
+    <div>
+      <div class="row input" >
+        <span class="prompt"> {{outputContainer.prompt}} {{ outputContainer.command}}</span>
+      </div>
+      <div class="row">
+        <div class="output" [innerHTML]="outputContainer.result"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="commandWrapper">
+    <label class="prompt"> root@nishant&nbsp;~&nbsp; </label>
+    <div>
+      <input #command  id="command" >
+    </div>
+  </div>
+</div>
