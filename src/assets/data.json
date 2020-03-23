@@ -33,9 +33,9 @@
       "start": "16-may-2016",
       "end": "15-july-2016",
       "role" : "Intern (Technology Analyst)",
-      "description" : {
+      "description" : [
 
-      }
+      ]
     },
     {
       "company": "JP Morgan Chase & Co.",
@@ -55,9 +55,8 @@
       "end": "31-july-2019",
       "role" : "Software Development Engineer 1",
       "description" : [
-       "Worked on developing scalable and high performing micro services.",
+        "Worked on developing scalable and high performing micro services.",
         "slug generation - generating meaningful url "
-
       ]
     },
     {
