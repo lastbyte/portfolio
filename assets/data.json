@@ -34,7 +34,7 @@
       "end": "15-july-2016",
       "role" : "Intern (Technology Analyst)",
       "description" : [
-
+        "Built an excel parser in java as a part of an application which use to take an excel sheet as input, The excel sheet has thousand of rows which were the rules imposed by federal governments, goal of the project was to parse these rows and and save the mappings in the database for evaluation"
       ]
     },
     {
@@ -46,7 +46,8 @@
         "Worked in an agile environment and participated in conceptualizing and implementing platform features for our global web project, Have a good amount of experience in TDD.",
         "Designed and developed micro-service based application which adheres to cloud development principle.",
         "Collaborated with front-end development team on user-facing features and services.",
-        "Migrating of Java 7 applications to java 8"
+        "Migration of bunch of application which were written in Java 7 to java 8, along with migration of vulnerable dependencies which could have been a potential threat"
+        "Wrote unit test cases for couple of application, Goal was to achieve 75% + test coverage in terms of lines covered"
       ]
     },
     {
@@ -56,7 +57,10 @@
       "role" : "Software Development Engineer 1",
       "description" : [
         "Worked on developing scalable and high performing micro services.",
-        "slug generation - generating meaningful url "
+        "Developed an application (slug-generator )which could be used as an dependency in other web facing application, for generating meaningful url for products in the catalog",
+        "Developed a feature for our mobile application (Auto apply coupons), aim of the project was to as soon as the user enters it's cart, The most suitable coupon should be automatically applied on the transaction "
+        "Worked on various AWS application like AWS lambdas, S3, DynamoDB, RDS, EC2",
+        "Developed a simple search tool for searching Insurance providers via the mobile application"
       ]
     },
     {
@@ -65,9 +69,11 @@
       "end": "present",
       "role" : "Software Development Engineer 1",
       "description" : [
-        "Worked in an agile environment and participated in conceptualizing and implementing platform features for our global web project, Have a good amount of experience in TDD.",
-        "Designed and developed micro-service based application which adheres to cloud development principle.",
-        "Collaborated with front-end development team on user-facing features and services."
+        "Built an in house application which is being used for on-boarding any new property to our platform. Earlier it was done using salesforce.",
+        "Built an Authentication system using Oauth2 standards with capability of role bases access.",
+        "Developed API's for a  dashboard for users where they have option of different kind of file upload, The input file can be excel or csv. The functionality of the API was to validate the data, persist all the valid rows, and generate a report for all the invalid rows."
+        "Worked on various Google Cloud Console solutions including GKE, CloudBuild, cloudSQL, redis",
+        "Built an CI/CD pipeline using google cloud build for our applications.",
       ]
     }
   ],
@@ -150,11 +156,56 @@
   },
   "projects" : [
     {
-      "name" : "portfolio",
+      "name" : "hand gesture recognition",
+      "url" : "https://github.com/knp069/",
+      "description" : "An application written in Python for recognising different hand gestures from a video or a still photo, the scope of the project was limited to numbers and alphabets",
+      "tags" : [
+        "python", "open-cv" , "computer-vision" , "object recognition"
+      ],
+      "contributors" : ["Nishant Kumar", "Prateek Kumar", "Vatsal Gosar", "Akshay Nene", "Akshay Bhawsar", "Abhishek Kinagi"]
+    },
+    {
+      "name" : "Simulator",
+      "url" : "https://github.com/knp069/simulator",
+      "description" : "A web Application built on Angular for simulating some of mathematical formulas and Computer science Algorithms",
+      "tags" : [
+        "angular", "bootstrap" , "p5.js"
+      ],
+      "contributors" : ["Nishant Kumar"]
+    },
+    {
+      "name" : "Portfolio",
       "url" : "https://github.com/knp069/portfolio",
       "description" : " A single page website , which looks like linux terminal, but is an portfolio, works like terminal, you can browse the website using the navigation bar or via commands",
       "tags" : [
         "angular", "json", "css", "html", "bootstrap"
+      ],
+      "contributors" : ["Nishant Kumar"]
+    },
+    {
+      "name" : "Spring-boot-App",
+      "url" : "https://github.com/knp069/basic-spring-boot",
+      "description" : "A small lightweight RESTful application , built on the principles of MVC architecture using spring boot as a framework",
+      "tags" : [
+        "spring-boot", "spring-jpa" , "hibernate" , "database"
+      ],
+      "contributors" : ["Nishant Kumar"]
+    },
+    {
+      "name" : "Axis - (Tech Fest website)",
+      "url" : "https://github.com/knp069/axis",
+      "description" : "Built an website for our Annual technical festival called AXIS, People could sign-up on the website and could register for any event online, and could also play some of the online hosted games like (221B Baker street)",
+      "tags" : [
+        "Javascript", "Jquery", "html", "css"
+      ],
+      "contributors" : ["Nishant Kumar"]
+    },
+    {
+      "name" : "Macro Expansion",
+      "url" : "https://github.com/knp069/Macro-Expansion",
+      "description" : "A small implementation of macro expansion ( c macros) written in java",
+      "tags" : [
+        "java", "macros" , "C"
       ],
       "contributors" : ["Nishant Kumar"]
     }
