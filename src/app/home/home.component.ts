@@ -80,7 +80,13 @@ export class HomeComponent implements OnInit, AfterViewInit{
 
   private runCommandAndDisplayOutput() {
     console.log(this.commandElement.nativeElement.value);
-    this.outputContainer = this.getCommandOutput(this.commandElement.nativeElement.value);
-    this.clearCommandValue();
+    if (this.commandElement.nativeElement.value === 'banner') {
+      this.outputContainer = null;
+      this.show = true;
+    } else {
+      this.show = false;
+      this.outputContainer = this.getCommandOutput(this.commandElement.nativeElement.value);
+      this.clearCommandValue();
+    }
   }
 }
