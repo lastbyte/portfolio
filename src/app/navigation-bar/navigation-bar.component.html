@@ -1,5 +1,4 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between navbar-fixed-top">
-
   <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
   <button class="navbar-toggler" type="button" (click)="toggleCollpsed()">
     &#9776;
@@ -9,7 +8,7 @@
   <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
     <ul class="navbar-nav">
       <li (click)="isMenuCollapsed=!isMenuCollapsed">
-        <a (click)="updateTerminalMessage('banner')">
+        <a (click)="updateTerminalMessage('banner')" >
           <fa-icon [icon]="homeIcon" aria-hidden="true"></fa-icon>
           HOME
         </a>

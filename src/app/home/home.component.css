@@ -100,4 +100,8 @@ app-home{
     align-items: center;
   }
 
+  pre{
+    display: none;
+  }
+
 }

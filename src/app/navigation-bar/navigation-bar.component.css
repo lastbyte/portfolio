@@ -9,6 +9,7 @@
 .navbar{
   z-index: 1000;
   background: black;
+  height: fit-content;
 }
 
 .show{
@@ -44,6 +45,11 @@
   }
   .navbar-nav{
     flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  .navbar-nav li{
+    margin-top: 1rem;
   }
 }
 
@@ -53,4 +59,6 @@
     justify-content: space-evenly;
     align-items: center;
   }
+
+
 }
