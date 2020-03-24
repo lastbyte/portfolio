@@ -70,7 +70,7 @@
       "role" : "Software Development Engineer 1",
       "description" : [
         "Built an in house application which is being used for on-boarding any new property to our platform. Earlier it was done using salesforce.",
-        "Built an Authentication system using Oauth2 standards with capability of role bases access.",
+        "Built an Authentication system using Oauth2 standards with capability of role bases access and supports user Hierarchy.",
         "Developed API's for a  dashboard for users where they have option of different kind of file upload, The input file can be excel or csv. The functionality of the API was to validate the data, persist all the valid rows, and generate a report for all the invalid rows.",
         "Worked on various Google Cloud Console solutions including GKE, CloudBuild, cloudSQL, redis",
         "Built an CI/CD pipeline using google cloud build for our applications."
