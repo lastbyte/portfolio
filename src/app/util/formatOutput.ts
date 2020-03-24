@@ -149,15 +149,24 @@ export class FormatOutput {
         response = response.concat('<div class="prompt">  Name : <span> ' + project.name + '</span></div>');
       }
       if (project.url !== '') {
-        response = response.concat('<div class="prompt">  URL : <span> ' + project.url + '</span></div>');
+        response = response.concat('<div class="prompt">  URL : <a  target="_blank" href=' + project.url + '> ' + project.url + '</a></div>');
       }
       if (project.description !== '') {
         response = response.concat('<div class="prompt">  Description : <span> ' + project.description + '</span></div>');
       }
+      if (project.tags.length > 0) {
+        response = response.concat('<div class="prompt"> Technology : ');
+        project.tags.forEach( tag => {
+          response = response.concat('<span>' + tag + ',&nbsp;' + '</span>');
+        });
+        response = response.concat('</div>');
+        response = response.concat('<div class="prompt"></div>');
+      }
+
       if (project.contributors.length > 0) {
-        response = response.concat('<div class="prompt">');
+        response = response.concat('<div class="prompt"> Contributors : ');
         project.contributors.forEach( contributor => {
-          response = response.concat('<span>' + contributor + '</span>');
+          response = response.concat('<span>' + contributor + ',&nbsp;' + '</span>');
         });
         response = response.concat('</div>');
         response = response.concat('<div class="prompt"><hr></div>');

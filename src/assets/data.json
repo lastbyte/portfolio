@@ -157,7 +157,7 @@
   "projects" : [
     {
       "name" : "hand gesture recognition",
-      "url" : "https://github.com/knp069/",
+      "url" : "https://github.com/knp069/handRecognition",
       "description" : "An application written in Python for recognising different hand gestures from a video or a still photo, the scope of the project was limited to numbers and alphabets",
       "tags" : [
         "python", "open-cv" , "computer-vision" , "object recognition"
