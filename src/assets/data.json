@@ -14,7 +14,7 @@
         "city" : "Bengaluru",
         "state" : "Karnataka"
       },
-      "interests" : ["sketching", "cooking", "trekking", "Travelling"],
+      "interests" : ["sketching", "cooking", "trekking", "Travelling", "sleeping"],
       "languages" : [
         {
           "name" : "English",
