@@ -16,7 +16,7 @@ export class NavigationBarComponent implements OnInit {
   skillsIcon = faBullseye;
   contactsIcon = faAddressCard;
   hamburgerIcon = faBars;
-  isMenuCollapsed = false;
+  isMenuCollapsed = true;
 
   constructor(private dataService: DataService) { }
 

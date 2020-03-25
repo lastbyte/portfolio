@@ -35,12 +35,29 @@ export class FormatOutput {
 
   private static formatHomeOutput(output: Home) {
     let response = '';
-    if (output.about.name !== '')
+    if (output.about.name !== '') {
       response = response.concat('<div class="prompt"> Name  :  <span>' +  output.about.name + '</span></div>');
+    }
+    if (output.about.phone !== '') {
+      response = response.concat('<div class="prompt"> Phone  :  <span>' +  output.about.phone + '</span></div>');
+    }
     if (output.about.email !== '') {
       response = response.concat('<div class="prompt"> Email : ' +
         '<a  target="_blank"   href=mailto:' + output.about.email + '> ' + output.about.email + '</a></div>');
     }
+    if (output.about.location != null) {
+      response = response.concat('<div class="prompt"> <span> Where do i live :  </span>');
+      if (output.about.location.address !== '') {
+        response = response.concat('<span>' + output.about.location.address + ', </span>');
+      }
+      if (output.about.location.city !== '') {
+        response = response.concat('<span>' + output.about.location.city + ', </span>');
+      }
+      if (output.about.location.state !== '') {
+        response = response.concat('<span>' + output.about.location.state + ' </span></div>');
+      }
+    }
+    response = response.concat('<hr>');
     if (output.about.github !== '') {
       response = response.concat('<div class="prompt"> Github : ' +
         '<a  target="_blank" href=' + output.about.github + '> ' + output.about.github  + '</a></div>');
@@ -53,9 +70,12 @@ export class FormatOutput {
       response = response.concat('<div class="prompt"> Facebook : ' +
         '<a  target="_blank" href=' + output.about.facebook + '> ' + output.about.facebook  + '</a></div>');
     }
+    response = response.concat('<hr>');
+
     if (output.about.description !== '') {
       response = response.concat('<div class="prompt"> Description : <span>' +  output.about.description + '</span></div>');
     }
+
     console.log(response);
     return response;
   }
@@ -177,7 +197,15 @@ export class FormatOutput {
   }
 
   private static formatContactsOutput(output: Home) {
-    return output.about.phone;
+    let response = '';
+    if (output.about.phone !== '') {
+      response = response.concat('<span class="prompt"> You can ping me at ' + output.about.phone + ' or </span>');
+    }
+    if (output.about.email !== '') {
+      response = response.concat('<span class="prompt"> can drop me an e-mail at <a href=mailto:' + output.about.email + '>' + output.about.email + '</a></span>');
+    }
+    console.log(response);
+    return response;
   }
 
   private static formatHelpOutput() {

@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import {Constants} from '../constants/constants';
 import {Data} from '../models/data';
 import {Home} from '../models/home';
+import {FormatOutput} from '../util/formatOutput';
 @Injectable({
   providedIn: 'root'
 })
@@ -43,15 +44,17 @@ export class DataService {
   getCommandOutput(command: string) {
     switch (command) {
       case Constants.ABOUT_ME :
-        return this.getAboutMe();
+        return FormatOutput.formatOutput(command, this.getAboutMe());
       case Constants.EXPERIENCE :
-        return this.getExperienceData();
+        return FormatOutput.formatOutput(command, this.getExperienceData());
       case Constants.EDUCATION :
-        return this.getEducationData();
+        return FormatOutput.formatOutput(command, this.getEducationData());
       case Constants.SKILLS :
-        return this.getSkillsData();
+        return FormatOutput.formatOutput(command, this.getSkillsData());
       case Constants.PROJECTS :
-        return this.getProjectsData();
+        return FormatOutput.formatOutput(command, this.getProjectsData());
+      case Constants.CONTACTS :
+        return FormatOutput.formatOutput(command, this.getContactMeData());
       case Constants.TIME :
         return new Date();
       case Constants.BANNER :

@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
     const output: Output = new Output();
     output.prompt = 'root@nishant ~ ';
     output.command = command;
-    output.result = this.sanitizer.bypassSecurityTrustHtml(FormatOutput.formatOutput(command, this.dataService.getCommandOutput(command)));
+    output.result = this.sanitizer.bypassSecurityTrustHtml(this.dataService.getCommandOutput(command));
     return output;
   }
 
