@@ -75,6 +75,12 @@ app-home{
   outline: none;
 }
 
+.badge{
+  background: white;
+  color: black !important;
+  margin-left: 1rem;
+}
+
 #outputContainer > .input{
   display: flex;
   justify-content: flex-start;

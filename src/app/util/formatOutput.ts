@@ -4,6 +4,7 @@ import {Education} from '../models/education';
 import {Experience} from '../models/experience';
 import {Skills} from '../models/skills';
 import {Projects} from '../models/projects';
+import {last} from 'rxjs/operators';
 
 export class FormatOutput {
 
@@ -72,8 +73,25 @@ export class FormatOutput {
     }
     response = response.concat('<hr>');
 
+    if (output.about.languages !== null) {
+      response = response.concat('<div class="prompt"> Languages I know : </div>');
+      output.about.languages.forEach( language => {
+        response = response.concat('<div class="prompt">' +  language.name + ' : ' + language.proficiency + '</div>');
+      });
+    }
+
+    if (output.about.interests !== null) {
+      response = response.concat('<div class="prompt"> My hobbies include :');
+      output.about.interests.forEach( interest => {
+        response = response.concat('<span class="prompt badge">' +  interest + ' </span>');
+      });
+      response = response.concat('</div>');
+    }
+
+    response = response.concat('<hr>');
+
     if (output.about.description !== '') {
-      response = response.concat('<div class="prompt"> Description : <span>' +  output.about.description + '</span></div>');
+      response = response.concat('<div class="prompt"> A little bit about myself : <span>' +  output.about.description + '</span></div>');
     }
 
     console.log(response);
