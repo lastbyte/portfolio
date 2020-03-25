@@ -14,7 +14,7 @@
         "city" : "Bengaluru",
         "state" : "Karnataka"
       },
-      "interests" : ["sketching", "cooking", "trekking", "Travelling"],
+      "interests" : ["sketching", "cooking", "trekking", "Travelling", "sleeping"],
       "languages" : [
         {
           "name" : "English",
@@ -122,8 +122,8 @@
           "level" : 8
         },
         {
-          "name": "go",
-          "level" : 7
+          "name": "ruby",
+          "level" : 8
         },
         {
           "name": "typescript",
@@ -144,7 +144,7 @@
           "level" : 8
         },
         {
-          "name" : "mockito",
+          "name" : "ROR",
           "level" : 10
         },
         {
