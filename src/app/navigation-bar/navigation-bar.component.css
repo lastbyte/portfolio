@@ -43,6 +43,11 @@
   .navbar-toggler{
     display: block;
   }
+
+  .navbar-collapse{
+    max-height: 100vh !important;
+  }
+
   .navbar-nav{
     flex-direction: column;
     height: 100vh;
@@ -58,7 +63,6 @@
     display: flex !important;
     justify-content: space-evenly;
     align-items: center;
+    height: 100vh;
   }
-
-
 }
