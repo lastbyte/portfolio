@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
   ngOnInit(): void {
     if (this.dataService.subVar === undefined) {
       this.dataService.subVar = this.dataService.navigationEventEmitter.subscribe( value => {
-        this.commandElement.nativeElement.value = value;
+        this.commandElement.nativeElement.value = value.toLowerCase();
         this.outputContainer = this.getCommandOutput(value);
         this.clearCommandValue();
         this.shiftFocusToInputBox(this.activeElement);
@@ -79,13 +79,15 @@ export class HomeComponent implements OnInit, AfterViewInit{
   }
 
   private runCommandAndDisplayOutput() {
-    console.log(this.commandElement.nativeElement.value);
-    if (this.commandElement.nativeElement.value === 'banner') {
-      this.outputContainer = null;
+    const value = this.commandElement.nativeElement.value.toLowerCase();
+    console.log(value);
+    if (value === 'banner') {
+      this.outputContainer = new Output();
       this.show = true;
+      this.clearCommandValue();
     } else {
       this.show = false;
-      this.outputContainer = this.getCommandOutput(this.commandElement.nativeElement.value);
+      this.outputContainer = this.getCommandOutput(value);
       this.clearCommandValue();
     }
   }
