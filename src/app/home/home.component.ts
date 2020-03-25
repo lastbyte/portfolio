@@ -3,6 +3,7 @@ import {DataService} from '../services/data.service';
 import {Output} from '../models/output';
 import {FormatOutput} from '../util/formatOutput';
 import {DomSanitizer} from '@angular/platform-browser';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-home',
@@ -23,7 +24,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
 
   show = true;
 
-  constructor(private dataService: DataService, private sanitizer: DomSanitizer) {
+  constructor(private dataService: DataService, private sanitizer: DomSanitizer, private deviceService: DeviceDetectorService) {
     this.activeElement = document.activeElement;
     this.outputContainer = new Output();
   }
@@ -66,8 +67,10 @@ export class HomeComponent implements OnInit, AfterViewInit{
     console.log('Current Active element is ', activeElement);
     if (this.commandElement !== undefined ) {
       console.log('command input box found');
-      this.commandElement.nativeElement.focus();
-      this.activeElement = this.commandElement;
+      if (!this.deviceService.isMobile()){
+        this.commandElement.nativeElement.focus();
+        this.activeElement = this.commandElement;
+      }
     } else {
       console.log('command input box not found');
     }
